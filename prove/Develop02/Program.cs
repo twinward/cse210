@@ -1,5 +1,7 @@
 /* This code won't work in this file for some reason, but I've tested it in another file and it works fine. I think my program is bugging. */
 
+/* For stretch requirements, I automated the date entry and created three categories of entries that the user can choose between: Morning, Evening, & Thoughtful. */
+
 using System;
 using System.Collections.Generic;
 using System.IO;
