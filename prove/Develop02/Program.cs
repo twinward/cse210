@@ -1,4 +1,4 @@
-/* This code won't work in this file for some reason, but I've tested it in another file and it works fine. I think my program is bugging. */
+/* Some of this code won't work in this file for some reason. I've tested it in another file and it works fine. I think my VS Code is bugging. If it's a problem with my code, please help me understand what's happening and how I can fix it. */
 
 /* For stretch requirements, I automated the date entry and created three categories of entries that the user can choose between: Morning, Evening, & Thoughtful. */
 
