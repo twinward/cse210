@@ -1,9 +1,15 @@
 using System;
+using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop03 World!");
+        Scripture scripture1 = new Scripture();
+
+        foreach (Word word in scripture1._words)
+        {
+            Console.Write($"{word._text} ");
+        }
     }
 }
