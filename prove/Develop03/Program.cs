@@ -5,11 +5,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        Scripture scripture1 = new Scripture();
-
-        foreach (Word word in scripture1._words)
-        {
-            Console.Write($"{word._text} ");
-        }
+        Reference ref1 = new Reference("Proverbs", 3, 5, 6);
+        Scripture scripture1 = new Scripture(ref1, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.");
+ 
+        Console.WriteLine(scripture1.GetDisplayText());
+        scripture1.HideRandomWords(5);
     }
 }
+
+// Proverbs 3:5-6
+// Trust in the Lord with all thine heart; and lean not unto thine own understanding.
+// In all thy ways acknowledge him, and he shall direct thy paths.

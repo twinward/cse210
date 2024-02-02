@@ -3,14 +3,46 @@ using System.Collections.Generic;
 
 class Word
 {
-    public string _text;
-    public bool _isHidden;
+    private string _text;
+    private bool _isHidden;
 
-    // Constructor: Whole number
-        public Word(string text)
+    // Constructors:
+    public Word(string text)
+    {
+        _text = text;
+        _isHidden = false;
+    }
+
+    // Methods:
+
+    public void Hide()
+    {
+        _isHidden = true;
+    }
+
+    public string GetDisplayText()
+    {
+        if (_isHidden == true)
         {
-            _text = text;
-            _isHidden = false;
+            return "_____";
         }
+        else
+        {
+            return $"{_text}";
+        }
+    }
+
+    public bool GetIsHidden()
+    {
+        if(_isHidden == true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 
 }
