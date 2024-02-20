@@ -1,6 +1,7 @@
+// I exceeded the project requirements by tracking how many times the user does an activity per session. Then when they close the program, I tell them how many times they did each activity.
+
 using System;
 using System.Threading;
-
 
 class Program
 {
